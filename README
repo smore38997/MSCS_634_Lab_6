@@ -1,0 +1,9 @@
+Association Rule Mining Lab
+
+By Shreyas More
+
+Purpose: Apply Apriori and FP-Growth to the UCI Online Retail dataset to find frequent itemsets and association rules, visualized with Seaborn.
+
+Key insights: Both algorithms returned identical itemsets and rules; FP-Growth ran faster as support dropped. Strong rules (high confidence, lift > 1) typically link variants of the same product family, suggesting bundling and recommendation opportunities. Lift helped filter out rules driven only by popular items.
+
+Challenges and decisions: Cleaned cancellations, negative quantities, and non-product rows. Restricted mining to one country (France) and capped itemset length to avoid memory and runtime problems. Chose min_support=0.07 and min_confidence=0.6 after testing several thresholds.
